@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "216380057198",
+    "firebase_url": "https://api-project-216380057198.firebaseio.com",
+    "project_id": "api-project-216380057198",
+    "storage_bucket": "api-project-216380057198.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216380057198:android:e732e97249e14188",
+        "android_client_info": {
+          "package_name": "en.aryma.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216380057198-fj51rjoca2cp3fh7cfp77q58vk56eg7g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "en.aryma.com",
+            "certificate_hash": "F01082C61F3E5F7F23A85ED781E3E3E2CF76C784"
+          }
+        },
+        {
+          "client_id": "216380057198-no98gbetr01h04dj9ead694c10tlgoc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa7cYvt20hKngrDqpt_hKDZw8_ICQ9jHU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216380057198-no98gbetr01h04dj9ead694c10tlgoc9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "216380057198-lgu2vvg3nbqn3uo9haqhpltunrn4d0fn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.escapenetwork.aryma"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216380057198:android:55162294989bff6f",
+        "android_client_info": {
+          "package_name": "hustle.aryma.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216380057198-no98gbetr01h04dj9ead694c10tlgoc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa7cYvt20hKngrDqpt_hKDZw8_ICQ9jHU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,130 @@
+<div data-page="editPayment"  class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a href="forms.html" class="back link icon-only"><i class="icon icon-close"></i></a></div>
+      <div class="center">Edit a Payment</div>
+      <div class="right"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+    </div>
+  </div>
+
+
+  <div class="page-content"  >
+  
+  <form id="editPayment2">
+    <div class="list-block inputs-list" >
+      <ul>
+
+      
+       <!-- Floating Action Button
+  "open-popover" class to open popover
+  "floating-button-to-popover" class to open popover with morph transition
+  data-popover=".demo-popver" to specify which popover to open
+  -->
+ 
+
+<div  class="box">
+
+        
+       <li>
+          <div class="item-content">
+            <div class="item-media"><i class="material-icons">account_box</i></div>
+            <div class="item-inner"> 
+              <div class="item-title label">Account Owner </div>
+              <div class="item-input">
+                   <input class="propietario" type="text" name="propietario" id="propietario" value="">
+              </select>
+              </div>
+            </div>
+          </div>
+        </li>
+     
+
+        <li>
+            <div class="item-content">
+            <div class="item-media"><i class="material-icons">attach_money</i></div>
+            <div class="item-inner not-empty-state">
+            <div class="item-title label">Amount</div>
+            <div class="item-input item-input-field not-empty-state">
+             <input class="importo" type="text" name="importo" id="importo" value="">
+            </div>
+            </div>
+          </div>
+        </li>  
+
+
+
+        
+                <li>
+          <div class="item-content">
+            <div class="item-media"><i class="material-icons">info_outline</i></div>
+            <div class="item-inner"> 
+              <div class="item-title label">Payment Method  </div>
+              <div class="item-input">
+            <select class="metodo_di_pagamento" name="metodo_di_pagamento" id="metodo_di_pagamento">
+            
+              <option value="-1">Select one </option>
+              <option value="1">Paypal</option>
+              <option value="2">Cash</option>
+              <option value="3">Credit Card</option>
+              <option value="4">Other</option>
+             </select>
+             
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+            <li>
+            <div class="item-content">
+            <div class="item-media"><i class="material-icons">date_range</i></div>
+            <div class="item-inner not-empty-state">
+            <div class="item-title label">Payment Date</div>
+            <div class="item-input item-input-field not-empty-state">
+          <input type="date" name="data_operazione" id="data_operazione" class="data_operazione" value="" size="30" >
+            </div>
+            </div>
+          </div>
+        </li> 
+
+            <li>
+            <div class="item-content">
+            <div class="item-media"><i class="material-icons">monetization_on</i></div>
+            <div class="item-inner not-empty-state">
+            <div class="item-title label">Commission</div>
+            <div class="item-input item-input-field not-empty-state">
+            <input  type="text" name="commissione" id="commissione" class="commissione" value="">
+            </div>
+            </div>
+          </div>
+        </li>  
+
+                   
+
+
+
+  <!-- End of Speed Dial -->
+</div>
+
+
+     
+     
+  
+
+          
+            <input type="hidden" value="" name="id" id="id">
+
+          
+      </ul>
+  <!-- Speed Dial Wrap -->
+
+    </div>
+
+         <div class="content-block">
+      <p class="buttons-row"><a href="#" class="button button-raised button-fill color-green">SAVE</a></p>
+</div>
+</form>
+
+
+
+</div>

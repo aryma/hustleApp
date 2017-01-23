@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" content="#2196f3">
+  <title>Hustle App</title>
+  <link rel="stylesheet" href="css/framework7.material.css">
+  <link rel="stylesheet" href="css/framework7.material.colors.css">
+
+  <link rel="stylesheet" href="css/font.css"  type="text/css">
+  <link rel="stylesheet" href="css/i.css" >
+  <link rel="stylesheet" href="css/kitchen-sink.css">
+  <link rel="stylesheet" href="css/mio.css">
+  <link rel="stylesheet" href="css/material-icons.css">
+  <!--<link rel="stylesheet" href="css/framework7.ios.min.css">-->
+  <link rel="stylesheet" href="css/framework7-icons.css">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="img/57x57.jpg"/>  
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/72x72.jpg"/>  
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/114x114.jpg"/> 
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
+
+<script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA474Mx8CyIrILTGg9Rd-owrZ1F_3YIZ0I",
+    authDomain: "api-project-216380057198.firebaseapp.com",
+    databaseURL: "https://api-project-216380057198.firebaseio.com",
+    storageBucket: "api-project-216380057198.appspot.com",
+    messagingSenderId: "216380057198"
+  };
+  firebase.initializeApp(config);
+</script>
+<style>
+
+
+  #nationality{
+
+    color: #a09e9e !important;
+  }
+  #availability{
+
+
+    color: #a09e9e !important;
+  }
+  #formCustomerForm > div.list-block.inputs-list > ul > li:nth-child(8) > div > div.item-inner.not-empty-state > div.item-input.item-input-field.not-empty-state > a > div > div > div.item-after{
+
+    margin-left: -15px !important;
+    margin-top: 12px !important;
+    font-size: 17px;
+    color: #a09e9e;
+  }
+  i{
+
+    color:#454545 !important;
+  }
+  img.responsive.cover {
+    z-index: 1;
+    position: relative;
+    -webkit-filter: brightness(60%);
+  }
+  img.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+  body > div.views > div > div > div > div.toolbar.toolbar-bottom > div > a:nth-child(1) > i{
+
+    color: white !important;
+  }
+
+  body > div.views > div > div > div > div.toolbar.toolbar-bottom > div > a:nth-child(2) > i{
+
+   color: white !important;
+ }
+ body > div.views > div > div > div > div.toolbar.toolbar-bottom > div > a:nth-child(3) > i{
+
+   color: white !important;
+ }
+ body > div.views > div > div > div > div.navbar > div > div.right > a > i{
+
+
+   color: white !important;
+ }
+ .navbar .center {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 44px;
+  -webkit-flex-shrink: 10;
+  -ms-flex: 0 10 auto;
+  flex-shrink: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+body > div.panel.panel-left.panel-cover.active > div > div > div > div{
+
+  padding-top: 0px !important;
+}
+body > div.modal-overlay.modal-overlay-visible{
+
+  opacity: 0;
+  visibility: hidden;
+
+}
+.file-button {
+ position:relative;
+ overflow:hidden;
+}
+.file-button input {
+  font-size: 10000px;
+  position: absolute;
+  left:0;
+  top:0;
+  opacity:0;
+}
+
+
+input[type="file"]{
+
+  display: none;
+}
+.custom-file-upload{
+  border: none;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.hold{
+
+  -moz-user-select: none;        
+  -webkit-user-select: none;        
+  user-select: none;
+}
+body{
+
+  -moz-user-select: none;        
+  -webkit-user-select: none;        
+  user-select: none;
+}
+
+
+</style>
+
+</head>
+<body>
+  <div class="app"></div>
+  <div class="statusbar-overlay"></div>
+  <div class="panel-overlay"></div>
+  <div class="panel panel-left panel-cover">
+    <div class="view navbar-fixed">
+      <div class="pages">
+        <div data-page="panel-left" class="page">
+
+          <div class="page-content">
+            <div class="content-block-title" id="welcome">MENÚ</div>
+            <div class="profile-cover">
+              <img class="responsive cover" src="img/Team.jpg" />
+            </div>
+            <div class="content-block">
+              <p></p>
+            </div>
+
+            <div class="list-block">
+              <ul class="menu">
+
+                <li>
+                  <a href="profile.php" class="item-link item-content close-panel">
+                    <div class="item-media"><i class="material-icons menu">person</i></div>
+                    <div class="item-inner menu">
+                      <div class="item-title menu">Profile</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="paymentsRegister.html" class="item-link item-content close-panel">
+                    <div class="item-media"><i class="material-icons">monetization_on</i></div>
+                    <div class="item-inner menu">
+                      <div class="item-title menu">Payments to check</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="paymentsBook.html" class="item-link item-content close-panel" >
+                    <div class="item-media"><i class="material-icons">library_books</i></div>
+                    <div class="item-inner menu">
+                      <div class="item-title menu">Payments Book</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="bookMeeting.html" class="item-link item-content close-panel">
+                    <div class="item-media"><i class="material-icons md-light">access_time</i></div>
+                    <div class="item-inner menu">
+                      <div class="item-title menu">Book an appointment</div>
+                    </div>
+                  </a>
+                </li>
+
+
+                <li>
+                  <a   href="#" id="open-logout" class="item-link item-content " onclick="logout()">
+                    <div class="item-media"><i class="material-icons menu">power_settings_new</i></div>
+                    <div class="item-inner menu">
+                      <div class="item-title menu">Sign out</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-block">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-right panel-reveal">
+    <div class="view view-right">
+      <div class="pages navbar-fixed">
+        <div data-page="panel-right1" class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="center">Right Panel</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="content-block">
+              <p><a href="#" class="close-panel">Chiudi</a></p>
+            </div>
+            <div class="list-block">
+              <ul>
+                <li><a href="panel-right2.html" class="item-link">
+                  <div class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title">Right panel page 2</div>
+                    </div>
+                  </div></a></li>
+                  <li><a href="panel-right3.html" class="item-link">
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title">Right panel page 3</div>
+                      </div>
+                    </div></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="views">
+        <div class="view view-main">
+          <div class="pages navbar-fixed">
+            <div data-page="index" class="page">
+              <div class="navbar">
+
+
+               <div class="navbar-inner">
+                <div class="left">
+                  <a href="#" class="open-panel link icon-only">
+                    <i class="icon icon-bars"></i>
+                  </a>
+                </div>
+                <div class="center" style="width:100%;display:initial;"><img src="img/logo-white.png" style="margin-top: 13px;height: 40px;"  class="responsive cover" alt="Escape Network APP"></div>
+                <div class="right">
+                  <a href="#" class="open-login-screen link icon-only">
+                   <i class="material-icons">person</i>
+                 </a>
+               </div>
+             </div>
+           </div>
+
+
+
+
+
+           <div class="page-content">
+            <div id="welkome" class="content-block-title">Please Log in to use the app</div>
+
+
+            <div class="list-block" id="main-menu">
+              <img src="img/Raff_1280x400-3.png" style="width: 100%;" alt="Escape Network APP">
+
+              <div class="content-block-title">CEO's Personal Functions</div>
+              <ul>
+
+                <li><a href="paymentsRegister.html">
+                  <div class="item-content">
+                    <div class="item-media"><i class="material-icons">attach_money</i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Payments To Check </div>
+                    </div>
+                  </div></a>
+                </li>
+
+
+              </div>
+
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="login-screen" >
+      <div class="view">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left"><a href="" class="back link icon-only" onclick="myApp.closeModal('.login-screen');"><i class="icon icon-back"></i></a></div>
+            <div class="center">Login</div>
+
+          </div>
+        </div>
+        <div class="page">
+          <div class="page-content login-screen-content" style="background: #212121; padding: 20px 0;">
+            <div class="login-screen-title"> </div><br>
+            <div class="content-block" >
+
+
+             <form  method="GET" enctype="application/x-www-form-urlencoded" class="list-block inset form-login" id="form-login" accept-charset="UTF-8" style=" padding-top: 30px ; padding-bottom: 30px">
+              <ul>
+
+
+                <li>
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-name"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title label">username</div>
+                      <div class="item-input">
+                        <input type="text" name="username" id="vf_username">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-password"></i></div>
+                    <div class="item-inner">
+                      <div class="item-title label">password</div>
+                      <div class="item-input">
+                        <input type="password" name="password" id="vf_password">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <p style="text-align: center"> or continue with Facebook </p>
+
+
+              <div class="item-content">
+
+                <div class="item-inner" style="text-align: center !important">
+
+                 <a href="#" class="button button-big button-round facebook" onclick="login()" >Sign in with Facebook</a><i class="fa fa-facebook" aria-hidden="true"></i>   
+
+                 <div id="status">
+                 </div>
+
+               </div>
+             </div>
+
+             <input type="hidden" name="usr_login" value="1">
+             <input type="hidden" name="token" value="app">
+             <div class="content-block"> <input type="button" value="entra" class="button button-big button-fill signin" id="btn-submit" > </div>
+
+
+             <div class="list-block-label">To continue Loging in.<br>You will need to get a password from the admin of the APP.</div>
+           </form>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+
+
+ <div class="profile" >
+  <div class="view">
+
+
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="left"><a href="#" class="back link icon-only"><i style="color:white !important;" class="material-icons">arrow_back</i></a></div>
+        <div class="center" id="profilename"></div>
+        <div class="right">
+          <a href="#" class="link icon-only"><i class="material-icons">person_add</i></a>
+          <a href="" data-popover=".popover-more" class="link icon-only open-popover"><i class="material-icons">more_vert</i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-container">
+      <img class="responsive cover" src="img/profile.jpg" />
+      <div class="opacity-container" style="bottom:5px;">
+        <div class="profile-info">
+          <div class="row no-gutter">
+            <div class="col-33 info">Posts</div>
+            <div class="col-33 info">Followers</div>
+            <div class="col-33 info">Following</div>
+          </div>
+          <div class="row no-gutter">
+            <div class="col-33 stats">4</div>
+            <div class="col-33 stats"><a href="followers.html" class="link">268</a></div>
+            <div class="col-33 stats"><a href="following.html" class="link">156</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="popover popover-more">
+      <div class="popover-angle"></div>
+      <div class="popover-inner">
+        <div class="list-block">
+          <ul>
+            <li> <a class="button file-button"><input type="file" capture="camera" accept="image/*" id="avatarCapture">Upload a File</a></li>
+            <li><a href="photos.html" class="list-button item-link more">Photos</a></li>
+            <li><a href="videos.html" class="list-button item-link more">Videos</a></li>
+            <li><a href="musiques.html" class="list-button item-link more">Musiques</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="app" style="display: none;">
+   <div id="deviceready" class="blink" >
+    <p class="event listening"></p>
+    <p class="event received"></p>
+  </div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="js/framework7.js"></script>
+<script type="text/javascript" src="js/kitchen-sink.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+ <script  type="text/javascript" src="js/openfb.js"></script>
+  <script>
+
+     // Defaults to sessionStorage for storing the Facebook token
+     openFB.init({appId: '376142819393186'});
+
+    //  Uncomment the line below to store the Facebook token in localStorage instead of sessionStorage
+    //  openFB.init({appId: 'YOUR_FB_APP_ID', tokenStore: window.localStorage});
+
+    function login() {
+      openFB.login(
+        function(response) {
+
+          if(response.status === 'connected') {
+            openFB.api({
+              path: '/me',
+              success: function(data) {
+
+                usr_uid = data.id;
+                usr_fbname = data.name;
+
+                localStorage.setItem("usr_uid", usr_uid);
+                localStorage.setItem("usr_fbname", usr_fbname);
+                var fcmToken =localStorage.getItem("fcmToken");
+                userLogin(endpoint,usr_uid,'nopassword',usr_uid,fcmToken);
+
+                var imageUrl= 'http://graph.facebook.com/' + data.id + '/picture?type=large';
+                localStorage.setItem('imageUrl',imageUrl);
+                document.getElementById("avatar").src = localStorage.getItem(imageUrl);
+                document.getElementById("welKome").src = usr_fbname;
+              },
+              error: errorHandler});
+            
+          } else {
+            alert('Facebook login failed: ' + response.error);
+          }
+        }, {scope: 'email,publish_actions'});
+    }
+
+    function logout() {
+
+      openFB.logout(
+ 
+        function() {
+
+          myApp.alert('Logout successful');
+        },
+        errorHandler);
+    }
+
+    function errorHandler(error) {
+      alert(error.message);
+    }
+
+  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+.form-login{
+	background: white none repeat scroll 0% 0%;    width: 100%;margin: 166px auto 0px;
+
+
+}
+
+.navbar, .toolbar, .subnavbar,.searchbar {
+    background: #454545;
+}
+
+a {
+
+    color: #454545;
+
+}
+	
+
+label.label-checkbox input[type="checkbox"]:checked + .item-media i.icon-form-checkbox, label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-checkbox, label.label-checkbox input[type="checkbox"]:checked ~ .item-after i.icon-form-checkbox, label.label-checkbox input[type="radio"]:checked ~ .item-after i.icon-form-checkbox, label.label-checkbox input[type="checkbox"]:checked ~ .item-inner i.icon-form-checkbox, label.label-checkbox input[type="radio"]:checked ~ .item-inner i.icon-form-checkbox {
+    border-color: #454545;
+    background-color: #454545;
+}
+#form-lead > div.list-block.inputs-list > ul > li:nth-child(8) > div > div.item-inner.not-empty-state > div.item-input.item-input-field.not-empty-state > a > div > div > div.item-after{
+
+
+	    margin-left: -15px !important;
+    margin-top: 12px !important;
+}
+
+#priorita{
+
+	color: #a09e9e !important;
+}
+
+.hidden { display:  none; }
+
+.box .button { 
+	text-align: left;
+	margin-left: 63px; 
+}
+
+#education_box {
+background: white;
+padding: 20px 0;
+
+}
+
+@font-face {
+  font-family: 'Framework7 Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Framework7Icons-Regular.eot");
+  src: local('Framework7 Icons'),
+     local('Framework7Icons-Regular'),
+     url("../fonts/Framework7Icons-Regular.woff2") format("woff2"),
+     url("../fonts/Framework7Icons-Regular.woff") format("woff"),
+     url("../fonts/Framework7Icons-Regular.ttf") format("truetype"),
+     url("../fonts/Framework7Icons-Regular.svg") format("svg");
+}
+
+.f7-icons, .framework7-icons {
+  font-family: 'Framework7 Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+}
+
+
+.msg {
+  padding: 2px 4px;
+  text-align: center;
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  text-transform: uppercase;
+  font-size: smaller;
+  color: white;
+}
+
+.green, .green a, a.green {
+  background: #3DA042;
+  color: #FFFFFF;
+}
+.gray, .gray a, a.gray {
+  background: #848484;
+  color: #FFFFFF;
+}
+.graylight, .graylight a, a.graylight {
+  background: #DCDCDC;
+  color: #FFFFFF;
+}
+.red, .red a, a.red {
+  background: #DA3235;
+  color: #FFFFFF;
+}
+.orange, .orange a, a.orange {
+  background: rgb(247, 170, 71);
+  color: #FFFFFF;
+}
+.purple, .purple a, a.purple {
+  background: rgb(139, 96, 170);
+  color: #FFFFFF;
+}
+.turquoise, .turquoise a, a.turquoise {
+  background: rgb(0, 177, 157);
+  color: #FFFFFF;
+}
+.blue, .blue a, a.blue {
+  background: #4788EF;
+  color: #FFFFFF;
+}
+.ball:before {
+  content: '\2022';
+}
+.ball {
+  font-size: 22px;
+}
+.c-green {
+  color: #3DA042;
+}
+.c-red, a.c-red {
+  color: #DA3235;
+}
+.c-blue {
+  color: #4788EF;
+}
+.c-orange {
+  color: #F6CD40;
+}
+.c-gray {
+  color: #8F8F8F;
+}

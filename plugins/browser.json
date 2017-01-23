@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-firebase": {
+            "PACKAGE_NAME": "hustle.aryma.com"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "hustle.aryma.com"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "hustle.aryma.com"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "hustle.aryma.com"
+        }
+    },
+    "dependent_plugins": {}
+}
